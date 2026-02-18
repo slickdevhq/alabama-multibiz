@@ -1,15 +1,22 @@
 import { useState, useEffect, useRef } from "react";
+import ownerPhoto from "./assets/alabama_pic.png";
+import prop1 from "./assets/alabam.jpg";
+import prop2 from "./assets/alabam2.jpg";
+import prop3 from "./assets/alabam3.jpg";
+import prop4 from "./assets/alabam4.jpg";
+import prop5 from "./assets/alabam5.jpg";
+import prop6 from "./assets/alabam6.jpg";
 
 const WHATSAPP_NUMBER = "2347082151926"; // placeholder
 const WHATSAPP_LINK = `https://wa.me/${WHATSAPP_NUMBER}`;
 
 const properties = [
-  { id: 1,  img: "/src/assets/alabam.jpg", title: "Premium Residential Plot", location: "Sagamu, Ogun State", size: "600 sqm", price: "₦X,XXX,XXX", desc: "Dry land with C of O. Perfect for family home or investment.", tag: "HOT DEAL" },
-  { id: 2,  img: "/src/assets/alabam2.jpg", title: "Commercial Plot", location: "Ikenne, Ogun State", size: "1000 sqm", price: "₦X,XXX,XXX", desc: "Strategic commercial location along major road. High ROI.", tag: "NEW" },
-  { id: 3,  img: "/src/assets/alabam3.jpg", title: "Residential Plot", location: "Sagamu, Ogun State", size: "450 sqm", price: "₦X,XXX,XXX", desc: "Serene neighbourhood, survey plan ready, instant allocation.", tag: "" },
-  { id: 4,  img: "/src/assets/alabam4.jpg", title: "Corner Piece Plot", location: "Ikenne, Ogun State", size: "600 sqm", price: "₦X,XXX,XXX", desc: "Corner piece with extra space. Gazette and survey available.", tag: "CORNER PIECE" },
-  { id: 5,  img: "/src/assets/alabam5.jpg", title: "Investment Land", location: "Sagamu Road, Ogun State", size: "1200 sqm", price: "₦X,XXX,XXX", desc: "Bulk land for investors. Fast appreciation zone.", tag: "INVESTORS" },
-  { id: 6, img: "/src/assets/alabam6.jpg", title: "Starter Plot", location: "Ikenne, Ogun State", size: "300 sqm", price: "₦X,XXX,XXX", desc: "Affordable entry-level plot. Installment payment accepted.", tag: "AFFORDABLE" },
+  { id: 1,  img:prop1, title: "Premium Residential Plot", location: "Sagamu, Ogun State", size: "600 sqm", price: "₦X,XXX,XXX", desc: "Dry land with C of O. Perfect for family home or investment.", tag: "HOT DEAL" },
+  { id: 2,  img:prop2, title: "Commercial Plot", location: "Ikenne, Ogun State", size: "1000 sqm", price: "₦X,XXX,XXX", desc: "Strategic commercial location along major road. High ROI.", tag: "NEW" },
+  { id: 3,  img: prop3, title: "Residential Plot", location: "Sagamu, Ogun State", size: "450 sqm", price: "₦X,XXX,XXX", desc: "Serene neighbourhood, survey plan ready, instant allocation.", tag: "" },
+  { id: 4,  img: prop4, title: "Corner Piece Plot", location: "Ikenne, Ogun State", size: "600 sqm", price: "₦X,XXX,XXX", desc: "Corner piece with extra space. Gazette and survey available.", tag: "CORNER PIECE" },
+  { id: 5,  img: prop5, title: "Investment Land", location: "Sagamu Road, Ogun State", size: "1200 sqm", price: "₦X,XXX,XXX", desc: "Bulk land for investors. Fast appreciation zone.", tag: "INVESTORS" },
+  { id: 6, img: prop6, title: "Starter Plot", location: "Ikenne, Ogun State", size: "300 sqm", price: "₦X,XXX,XXX", desc: "Affordable entry-level plot. Installment payment accepted.", tag: "AFFORDABLE" },
 ];
 
 const testimonials = [
@@ -178,7 +185,7 @@ export default function App() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <FadeIn>
             <div className="relative">
-              <img src="/src/assets/alabama_pic.png" alt="Alabama - Owner" className="rounded-3xl h-80 sm:h-96 w-full object-cover" />
+              <img src={ownerPhoto} alt="Alabama - Owner" className="rounded-3xl h-80 sm:h-96 w-full object-cover" />
               <div className="absolute -bottom-4 -right-4 bg-forest text-white px-6 py-3 rounded-2xl shadow-xl" style={{ background: "#1A3A2A" }}>
                 <span className="gold font-bold text-2xl heading">XX+</span>
                 <p className="text-xs text-green-300">Years of Experience</p>
